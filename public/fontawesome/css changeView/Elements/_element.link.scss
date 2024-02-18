@@ -1,0 +1,12 @@
+.e-link {
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0;
+
+	&:hover {
+		text-decoration: none;
+		outline: none;
+	}
+}

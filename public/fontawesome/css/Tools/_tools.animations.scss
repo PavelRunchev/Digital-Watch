@@ -1,0 +1,90 @@
+@keyframes main-picture {
+	from {
+		opacity: 0;
+		border: 2px solid $secondary-color-white;
+	}
+
+	to {
+		border: 2px solid $secondary-color-white;
+		transition: all 0.5s ease-out;
+		opacity: 1;
+	}
+}
+
+@keyframes shake {
+    0% {
+		-webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+		-moz-box-shadow:    0px 0px 0px 0px rgba(255, 255, 255, 0);
+		box-shadow:         0px 0px 0px 0px rgba(255, 255, 255, 0);
+		transform: scale(1);
+    }
+
+    50% {
+        -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 1);
+		-moz-box-shadow:    0px 0px 20px 0px rgba(255, 255, 255, 1);
+		box-shadow:         0px 0px 20px 0px rgba(255, 255, 255, 1);
+		transform: scale(1.05);
+    }
+
+    100% {
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0);
+		-moz-box-shadow:    0px 0px 0px 0px rgba(255, 255, 255, 0);
+		box-shadow:         0px 0px 0px 0px rgba(255, 255, 255, 0);
+		transform: scale(1);
+    }
+}
+
+@keyframes reactRotate {
+	from {
+		transform: rotateZ(0deg);
+	}
+
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes angularRotate {
+	from {
+		transform: rotateY(0deg);
+	}
+
+	to {
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes smallest {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.3);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes grow-box {
+	0% {
+		transform: scale(0);
+	}
+	
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+

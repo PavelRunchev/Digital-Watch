@@ -1,0 +1,283 @@
+/* loading fontawesome icons!!! */
+@import url("./public/fontawesome/css/all.css");
+@import url("./public/fontawesome/css/brands.css");
+@import url("./public/fontawesome/css/regular.css");
+@import url("./public/fontawesome/css/fontawesome.css");
+@import url("./public/fontawesome/css/solid.css");
+
+/* import font Roboto */
+@font-face {
+	font-family: 'Roboto';
+	src: url('./public/fonts/roboto/Roboto-Regular.eot') format('embedded-opentype');
+	src: url('./public/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+	src: url('./public/fonts/roboto/Roboto-Regular.woff') format('woff');
+	src: url('./public/fonts/roboto/Roboto-Regular.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* import font Open Sans */
+@font-face {
+	font-family: 'Open Sans';
+	src: url('./public/fonts/open-sans/OpenSans-Light.eot') format('embedded-opentype');
+	src: url('./public/fonts/open-sans/OpenSans-Light.ttf') format('truetype');
+	src: url('./public/fonts/open-sans/OpenSans-Light.woff') format('woff');
+	src: url('./public/fonts/open-sans/OpenSans-Light.woff2') format('woff2');
+	src: url('./public/fonts/open-sans/OpenSans-SemiBold.eot') format('embedded-opentype');
+	src: url('./public/fonts/open-sans/OpenSans-SemiBold.ttf') format('truetype');
+	src: url('./public/fonts/open-sans/OpenSans-SemiBold.woff') format('woff');
+	src: url('./public/fonts/open-sans/OpenSans-SemiBold.woff2') format('woff2');
+	src: url('./public/fonts/open-sans/OpenSans-Regular.eot') format('embedded-opentype');
+	src: url('./public/fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+	src: url('./public/fonts/open-sans/OpenSans-Regular.woff') format('woff');
+	src: url('./public/fonts/open-sans/OpenSans-Regular.woff2') format('woff2');
+	font-display: swap;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a, button {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.watch-container {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(240deg, 100%, 4%);
+    color: hsl(204deg, 100%, 41%);
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
+	grid-template-rows: 300px 1fr 200px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.watch-inner-container {
+	width: 100%;
+	height: auto;
+	border: 2px solid hsl(204deg, 100%, 41%);
+	-webkit-box-shadow: 0px 0px 8px 1px hsl(204deg, 100%, 41%); 
+	box-shadow: 0px 0px 8px 1px hsl(204deg, 100%, 41%);
+	border-radius: 5px;
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.right-time {
+	font-size: 60px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.date {
+	font-size: 40px;
+}
+
+.show {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hide {
+	display: none;
+}
+
+.alarm-show-container {
+	width: 100%;
+	height: 100%;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+
+.alarm {
+	font-size: 30px;
+	height: 50px;
+	color: hsl(0deg, 100%, 33%);
+}
+
+.alarm-container {
+	width: 100%;
+	height: 80px;
+	border: 2px solid hsl(204deg, 100%, 41%);
+	border-radius: 5px;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	overflow: hidden;
+}
+
+.set-alarm-btn,
+.clear-alarm-btn {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background-color: transparent;
+	color: hsl(204deg, 100%, 41%);
+	font-size: 30px;
+	transition: all 0.3 ease-out;
+}
+
+.set-alarm-btn:hover,
+.clear-alarm-btn:hover {
+	-webkit-box-shadow: 0px 0px 11px 1px hsl(204deg, 100%, 41%); 
+	box-shadow: 0px 0px 11px 1px hsl(204deg, 100%, 41%);
+}
+
+.alarm-options-container {
+	width: 100%;
+	height: 100%;
+}
+
+.alarm-activate-btn {
+	cursor: pointer;
+	font-size: 20px;
+	padding: 1px 10px;
+	border: 1px solid hsl(204deg, 100%, 41%);
+	color: hsl(204deg, 100%, 41%);
+	background-color: hsl(240deg, 100%, 4%);
+	border-radius: 2px;
+	transition: all 0.3 ease-out;
+}
+
+.alarm-activate-btn:hover {
+	-webkit-box-shadow: 0px 0px 5px 1px hsl(204deg, 100%, 41%); 
+	box-shadow: 0px 0px 5px 1px hsl(204deg, 100%, 41%);
+}
+
+.fa-clock {
+	color: hsl(204deg, 100%, 41%);
+	font-size: 25px;
+}
+
+.set-timer-alarm {
+	color: hsl(204deg, 100%, 0%) !important;
+	background-color: hsl(204deg, 100%, 41%) !important;
+	border: none !important;
+}
+
+/* Card */
+.card {
+	display: none;
+	position: fixed !important;
+	left: calc(100% / 2 - 5%);
+	top: calc(100% / 2 - 10%);
+	width: 300px;
+	height: 200px;
+	-webkit-box-shadow: 0px 0px 5px 1px hsl(204deg, 100%, 100%) !important; 
+	box-shadow: 0px 0px 5px 1px hsl(204deg, 100%, 100%) !important;
+}
+
+.audio-file-btn-ok,
+.audio-file-btn-stop {
+	background-color: hsl(204deg, 100%, 41%) !important;
+	color: hsl(204deg, 100%, 100%) !important;
+	border: 1px solid hsl(204deg, 100%, 41%) !important;
+	transition: all 0.3s ease-out;
+}
+
+.audio-tag {
+	display: none;
+}
+
+/* Responsive Design*/
+@media screen and (max-width: 992px) {
+	.watch-container {
+		grid-template-columns: 50px 1fr 50px;
+		grid-template-rows: 300px 1fr 200px;
+		justify-content: center;
+		align-items: center;
+		color: orange;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.watch-inner-container {
+		height: auto;
+	}
+
+	.image {
+		height: 100px;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.watch-container {
+		grid-template-columns: 20px 1fr 20px;
+		grid-template-rows: auto 1fr auto;
+		grid-template-rows: auto 1fr auto;
+		justify-content: center;
+		align-items: center;
+		padding: 40px 0px;
+	}
+
+	.image {
+		height: 60px;
+	}
+
+	.date {
+		font-size: 26px;
+	}
+
+	.alarm {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	.alarm-container {
+		height: auto;
+	}
+
+	.alarm-options-container {
+		height: 250px;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 5% 0% 5% 5%;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.watch-container {
+		grid-template-columns: 10px 1fr 10px;
+		grid-template-rows: auto 1fr auto;
+		justify-content: center;
+		align-items: center;
+		color: pink;
+	}
+
+	.image {
+		height: 40px;
+	}
+
+	.date {
+		font-size: 20px;
+	}
+}
+
+
+
+

@@ -1,0 +1,15 @@
+.o-primery-container {
+	width: 80%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 3% 7%;
+	background: $background-color-blue-100;
+	@include primary-box-shadow-black;
+	border-radius: 5px;
+
+	@include for-phone-only {
+		width: 96%;
+	}
+}

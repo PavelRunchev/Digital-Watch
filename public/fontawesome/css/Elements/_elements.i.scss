@@ -1,0 +1,50 @@
+.fa-mobile {
+	animation-name: shake;
+	animation-delay: 0s;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.fa-skype,
+.fa-github,
+.fa-linkedin-in,
+.fa-facebook-square,
+.fa-envelope
+ {
+	font-size: 30px;
+	margin: 0 5%;
+}
+
+.fa-skype:hover,
+.fa-github:hover,
+.fa-linkedin-in:hover,
+.fa-facebook-square:hover,
+.fa-envelope:hover
+{
+	transform: scale(1.1);
+}
+
+.fa-skype {
+	color: $skype-color;
+}
+
+.fa-github {
+	color: $github-color;
+}
+
+.fa-linkedin-in {
+	color: $linked-in-color;
+}
+
+.fa-facebook-square {
+	color: $facebook-color;
+}
+
+.fa-envelope {
+	color: $gmail-color;
+}
+
+
+
+
+

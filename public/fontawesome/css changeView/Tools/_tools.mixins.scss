@@ -1,0 +1,114 @@
+
+@mixin primary-box-shadow-black {
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 13px 0px rgba(50, 50, 50, 0.75);
+}
+
+@mixin secondary-box-shadow-black {
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+	box-shadow:         0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+@mixin third-box-shadow-black {
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow:    0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+	box-shadow:         0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+@mixin flex-box($flex, $content, $items) {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+	display: flex;
+	
+	-webkit-flex-flow: $flex wrap;
+	-moz-flex-flow: $flex wrap;
+	-ms-flex-flow: $flex wrap;
+	flex-flow: $flex wrap;
+
+	-webkit-justify-content: space-around;
+	-moz-justify-content: $content;
+	-ms-justify-content: $content;
+	justify-content: $content;
+	
+	-webkit-align-items: $items;
+	-ms-align-items: $items;
+	-moz-align-items: $items;
+	align-items: $items;
+}
+
+@mixin grid($column, $row, $content, $items) {
+	display: -ms-grid;
+	display: -webkit-grid;
+	display: -moz-grid;
+	display: grid;
+	
+	-webkit-grid-template-columns: $column;
+	-moz-grid-template-columns: $column;
+	-ms-grid-template-columns: $column;
+	-o-grid-template-columns: $column;
+	grid-template-columns: $column;
+
+	-webkit-grid-template-rows: $row;
+	-moz-grid-template-rows: $row;
+	-ms-grid-template-rows: $row;
+	-o-grid-template-rows: $row;
+	grid-template-rows: $row;
+	
+	-webkit-justify-content: $content;
+	-moz-justify-content: $content;
+	-ms-justify-content: $content;
+	justify-content: $content;
+	
+	-webkit-align-items: $items;
+	-ms-align-items: $items;
+	-moz-align-items: $items;
+	align-items: $items;
+}
+
+@mixin grid-child-columns-rows($col-start, $col-end, $row-start, $row-end) {
+	-webkit-grid-column-start: $col-start;
+	-webkit-grid-column-end: $col-end;
+	grid-column-start: $col-start;
+	grid-column-end: $col-end;
+
+	-webkit-grid-row-start: $row-start;
+	-webkit-grid-row-end: $row-end;
+	grid-row-start: $row-start;
+	grid-row-end: $row-end;
+}
+
+@mixin grid-gap($gap) {
+	-webkit-grid-gap: $gap;
+	-ms-grid-gap: $gap;
+	-moz-grid-gap: $gap;
+	-o-grid-gap: $gap;
+	grid-gap: $gap;
+}	
+
+@mixin transition-all-ease-out($sec) {
+	-webkit-transition: all $sec ease-out;
+	-moz-transition: all $sec ease-out;
+	-o-transition: all $sec ease-out;
+	-ms-transition: all $sec ease-out;
+	transition: all $sec ease-out;
+}
+
+@mixin transform-translate-and-scale($X, $Y, $scale) {
+	transform: translate($X, $Y) scale($scale);
+	-webkit-transform: translate($X, $Y) scale($scale);
+	-ms-transform: translate($X, $Y) scale($scale);
+	-moz-transform: translate($X, $Y) scale($scale);
+	-o-transform: translate($X, $Y) scale($scale);
+}
+
+@mixin transform-scale($scale) {
+	-webkit-transform: scale($scale);
+	-ms-transform: scale($scale);
+	-moz-transform: scale($scale);
+	-o-transform: scale($scale);
+	transform: scale($scale);
+}

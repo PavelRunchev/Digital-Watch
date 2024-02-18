@@ -1,0 +1,22 @@
+
+.u-padding-text-left {
+	@include for-phone-mini {
+		padding-left: 0.5rem;
+	}
+
+	@include for-phone-only {
+		padding-left: 0.5rem;
+	}
+
+	@include for-tablet-portrait-up {
+		padding-left: 1rem;
+	}
+
+	@include for-tablet-landscape-up {
+		padding-left: 3rem;
+	}
+
+	@include for-big-desktop-up {
+		padding-left: 6rem;
+	}
+}

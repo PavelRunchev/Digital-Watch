@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="index.css" />
+   
+    <link href="./public/fontawesome/css/regular.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/bootstrap-resource/bootstrap.css">
+    <link rel="stylesheet" href="./public/bootstrap-resource/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./public/bootstrap-resource/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./public/bootstrap-resource/mdb.min.css">
+    <!-- Bootstrap Css -->
+
+    <title>Digital Watch</title>
+</head>
+<body>
+    <div class="watch-container">
+        <div class="card">
+            <div class="card-body w-100 justify-content-center align-items-center">
+              <h5 class="card-title text-center"><i class="far fa-bell"></i> Alarm</h5>
+              <p class="card-text mt-3 text-center alarm-time-info hide">Alarm time: <span class="alarm-time-digit"></span></p>
+              <p class="card-text mt-3 text-center audio-file-info hide">Play audio file...</p>
+              <p class="card-text mt-3 text-center vibration-info hide">Vibrate...</p>
+              <div class="d-flex w-100 justify-content-center align-items-center" >
+                    <button type="button" class="btn audio-file-btn-ok mr-3" data-mdb-ripple-init>Ok</button>
+                    <button type="button" class="btn audio-file-btn-stop" data-mdb-ripple-init>Stop</button>
+              </div>
+            </div>
+        </div>
+
+        <div class="watch-inner-container">
+            <div class="right-time">
+                <img class="time-image-first-hour-digit image" src="../images/digit-0.png" alt="image"/>
+                <img class="time-image-last-hour-digit image" src="../images/digit-0.png" alt="image"/>
+                <img class="time-image image" src="../images/colon.png" alt="image"/>
+                <img class="time-image-first-minute-digit image" src="../images/digit-0.png" alt="image"/>
+                <img class="time-image-last-minute-digit image" src="../images/digit-0.png" alt="image"/>
+                <img class="time-image image" src="../images/colon.png" alt="image"/>
+                <img class="time-image-first-second-digit image" src="../images/digit-0.png" alt="image"/>
+                <img class="time-image-last-second-digit image" src="../images/digit-0.png" alt="image"/>
+            </div>
+
+            <div class="date"></div>
+        </div>
+
+        <div class="alarm-show-container hide">
+            <div class="alarm">Alarm time: <span class="alarm-timer-on"> 13:15</span> <i class="far fa-bell"></i></div>
+        </div>
+
+        <div class="alarm-container">
+            <button class="set-alarm-btn show">Set Alarm</button>
+            <div class="alarm-options-container hide">
+                
+                <div class="form-check mr-3">
+                        <span class="mr-3">Audio</span>
+                    <input class="form-check-input check-audio-btn" type="radio" name="flexRadioDefault1" id="flexRadioDefault1"/>
+                </div>
+
+                <div class="form-check mr-3">
+                        <span class="mr-3">Vibration</span>
+                    <input class="form-check-input check-vibration-btn" type="radio" name="flexRadioDefault2" id="flexRadioDefault2"/>
+                </div>
+                  
+                <div class="cs-form mr-3 alarm-set-timer-container">
+                    <input type="time" class="form-control set-timer-alarm" defaultTime="false" value="00:00"/>
+                </div>
+                
+                <button class="alarm-activate-btn">Activate</button>
+            </div>
+
+            <button class="clear-alarm-btn hide">Clear Alarm</button>
+        </div>
+
+        <audio controls class="audio-tag">
+            <source src="./public/mixkit-warning-alarm-buzzer-991.wav" type="audio/wav">
+        </audio>
+    </div>
+
+    <!-- loading jQuery -->
+    <script src="./public/bootstrap-resource/bootstrap-js/jquery.min.js"></script>
+    <!-- loading Popper.min.js - needed after respone navigation click show nav menu -->
+    <script src="./public/bootstrap-resource/bootstrap-js/popper.min.js"></script>
+    <script src="./public/bootstrap-resource/bootstrap-js/bootstrap.bundle.min.js"></script>
+    <script src="./public/bootstrap-resource/bootstrap-js/bootstrap.min.js"></script>
+
+    <script src="./public/bootstrap-resource/bootstrap-js/scrolling.js"></script>
+    <script src="./public/bootstrap-resource/bootstrap-js/mdb.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

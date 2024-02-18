@@ -1,0 +1,97 @@
+//footer
+.c-footer {
+	width: 100%;
+	max-width: 100%;
+	@include flex-box(column, flex-start, center);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	//section
+	&-development-tools {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		padding: 3% 0;
+	}
+
+	//div
+	&-development-tools-container {
+		width: 100%;
+		@include flex-box(row, space-around, center);
+		padding: 3% 0 5% 0;
+
+		@include for-phone-only {
+			@include flex-box(column, space-around, center);
+		}
+	}
+
+	//div
+	&-development-tools-container-JS,
+	&-development-tools-container-C,
+	&-development-tools-container-Java {
+		width: 200px;
+
+		@include for-phone-only {
+			margin: 5% 0;
+		}
+	}
+
+	//div
+	&-development-tools-container-links {
+		width: 100%;
+		@include flex-box(row, space-around, center);
+	}
+
+	//a
+	&-development-tools-container-link {
+		display: block;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	//img
+	&-development-tools-image {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		@include transition-all-ease-out(0.3s);
+
+		&:hover {
+			@include primery-box-shadow-white;
+			@include transform-scale(1.2);
+		}
+	}
+
+	&-development-tools-container-C {
+		@include for-phone-only {
+			order: 1;
+		}
+	}
+
+	&-container-support {
+		@include flex-box(row, center, stretch);
+	}
+
+	&-support-link {
+		text-transform: uppercase;
+		color: $secondary-color-white !important;
+		@include transition-all-ease-out(0.3s);
+		&:hover {
+			@include transform-scale(1.2);
+		}
+	}
+
+	.fa-html5,
+	.fa-css3-alt,
+	.fa-sass,
+	.fa-bold,
+	.fa-js-square {
+		line-height: 2.5;
+	}
+}
+
+
+
+
+

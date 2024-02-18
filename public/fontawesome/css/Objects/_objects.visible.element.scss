@@ -1,0 +1,22 @@
+
+.o-visible-element {
+	opacity: 0;
+	-webkit-animation: fade-in 1s ease-out forwards;
+	-moz-animation: fade-in 1s ease-out forwards;
+	-ms-animation: fade-in 1s ease-out forwards;
+	-o-animation: fade-in 1s ease-out forwards;
+	animation: fade-in 1s ease-out forwards;
+
+	@for $i from 1 to 100 {
+		&:nth-of-type(#{$i}) {
+			-webkit-animation-delay: $i * 0.25s;
+			-moz-animation-delay: $i * 0.25s;
+			-ms-animation-delay: $i * 0.25s;
+			-o-animation-delay: $i * 0.25s;
+			animation-delay: $i * 0.25s;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,31 @@
+
+.u-icons {
+	width: 60px;
+	display: inline-block;
+	font-size: 30px;
+	line-height: 2;
+	color: $third-color-white !important;
+	background-color: $primary-color-black;
+	border-radius: 100%;
+	text-align: center;
+		
+	@include transition-all-ease-out(0.3s);
+
+	@include for-phone-only {
+		margin: 0 1.4rem;
+	}
+
+	@include for-tablet-down {
+		margin: 0 1rem;
+	}
+
+	@include for-tablet-landscape-up {
+		margin: 0 1.4rem;
+	}
+
+	&:hover {
+		background-color: $background-color-green;
+		@include transform-scale(0.9);
+		@include primary-box-shadow-black;
+	}
+}
