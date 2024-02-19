@@ -1,0 +1,387 @@
+
+.c-skills {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+
+	&-header {
+		width: 200px;
+	}
+
+	&-container {
+		width: 100%;
+		margin: 0 auto;
+		background-size: cover;
+	}
+
+	&-primery-container {
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		padding: 5%;
+		@include primary-box-shadow-black;
+	}
+
+	&-tools-container {
+		padding: 0;
+		margin: 5% auto;
+
+		@include for-phone-only {
+			@include flex-box(column, space-around, center);
+		}
+
+		@include for-tablet-portrait-up {
+			@include flex-box(row, space-around, stretch);
+		}
+		
+		//JS icon
+		.fa-js-square {
+			color: $js-color;
+			&:hover {
+				color: $secondary-color-white;
+			}
+
+			&:hover ~ .c-skills-js-info {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+
+		.c-skills-js-info {
+			background-color: $background-color-hidden;
+			color: $secondary-color-white;
+			text-decoration: none;
+
+			@include transform-translate-and-scale-base-position(-180px, 90px);
+			@include transition-all-ease-out(0.3s);
+		
+			@include for-tablet-landscape-up {
+				width: 340px;
+				@include transform-translate-and-scale-base-position(-130px, 90px);
+				
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+		
+			@include for-desktop-up {
+				width: 430px;
+				@include transform-translate-and-scale-base-position(-180px, 90px);
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+				
+			&:hover {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+	
+		//Angular icon
+		.fa-angular {
+			color: $angular-color;
+			animation: angularRotate 8s linear 0s infinite;
+			&:hover {
+				color: $secondary-color-white;
+				animation-play-state: paused;
+			}
+
+			&:hover ~ .c-skills-angular-info {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+
+		.c-skills-angular-info {
+			background-color: $background-color-hidden;
+			color: $secondary-color-white;
+			text-decoration: none;
+
+			@include transform-translate-and-scale-base-position(-180px, 90px);
+			@include transition-all-ease-out(0.3s);
+		
+			@include for-tablet-landscape-up {
+				width: 340px;
+				@include transform-translate-and-scale-base-position(-130px, 90px);
+				
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+		
+			@include for-desktop-up {
+				width: 430px;
+				@include transform-translate-and-scale-base-position(-180px, 90px);
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+				
+			&:hover {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+	
+		//React icon
+		.fa-react {
+			color: $react-color;
+			animation: reactRotate 8s linear 0s infinite;
+			&:hover {
+				color: $secondary-color-white;
+				animation-play-state: paused;
+			}
+
+			&:hover ~ .c-skills-react-info {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+
+		.c-skills-react-info {
+			background-color: $background-color-hidden;
+			color: $secondary-color-white;
+			text-decoration: none;
+
+			@include transform-translate-and-scale-base-position(-180px, 90px);
+			@include transition-all-ease-out(0.3s);
+		
+			@include for-tablet-landscape-up {
+				width: 340px;
+				@include transform-translate-and-scale-base-position(-130px, 90px);
+				
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+		
+			@include for-desktop-up {
+				width: 430px;
+				@include transform-translate-and-scale-base-position(-180px, 90px);
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+				
+			&:hover {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+	
+		//Node JS
+		.fa-node {
+			color: $node-js-color;
+			&:hover {
+				color: $secondary-color-white;
+			}
+
+			&:hover ~ .c-skills-nodeJS-info {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+
+		.c-skills-nodeJS-info {
+			background-color: $background-color-hidden;
+			color: $secondary-color-white;
+			text-decoration: none;
+
+			@include transform-translate-and-scale-base-position(-180px, 90px);
+			@include transition-all-ease-out(0.3s);
+		
+			@include for-tablet-landscape-up {
+				width: 340px;
+				@include transform-translate-and-scale-base-position(-130px, 90px);
+				
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+		
+			@include for-desktop-up {
+				width: 430px;
+				@include transform-translate-and-scale-base-position(-180px, 90px);
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+				
+			&:hover {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+	
+		//Sass icon
+		.fa-sass {
+			color: $sass-color;
+			&:hover {
+				color: $secondary-color-white;
+			}
+
+			&:hover ~ .c-skills-sass-info {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+
+		.c-skills-sass-info {
+			background-color: $background-color-hidden;
+			color: $secondary-color-white;
+			text-decoration: none;
+
+			@include transform-translate-and-scale-base-position(-180px, 90px);
+			@include transition-all-ease-out(0.3s);
+		
+			@include for-tablet-landscape-up {
+				width: 340px;
+				@include transform-translate-and-scale-base-position(-130px, 90px);
+				
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+		
+			@include for-desktop-up {
+				width: 430px;
+				@include transform-translate-and-scale-base-position(-180px, 90px);
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+				
+			&:hover {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+	
+		//Npm icon
+		.fa-npm {
+			color: $npm-color;
+			&:hover {
+				color: $secondary-color-white;
+			}
+
+			&:hover ~ .c-skills-npm-info {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+
+		.c-skills-npm-info {
+			background-color: $background-color-hidden;
+			color: $secondary-color-white;
+			text-decoration: none;
+
+			@include transform-translate-and-scale-base-position(-180px, 90px);
+			@include transition-all-ease-out(0.3s);
+		
+			@include for-tablet-landscape-up {
+				width: 340px;
+				@include transform-translate-and-scale-base-position(-130px, 90px);
+				
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+		
+			@include for-desktop-up {
+				width: 430px;
+				@include transform-translate-and-scale-base-position(-180px, 90px);
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+				
+			&:hover {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+	
+		//HTML5 icon
+		.fa-html5 {
+			color: $html5-color;
+			&:hover {
+				color: $secondary-color-white;
+			}
+
+			&:hover ~ .c-skills-html5-info {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+
+		.c-skills-html5-info {
+			background-color: $background-color-hidden;
+			color: $secondary-color-white;
+			text-decoration: none;
+
+			@include transform-translate-and-scale-base-position(-180px, 90px);
+			@include transition-all-ease-out(0.3s);
+		
+			@include for-tablet-landscape-up {
+				width: 340px;
+				@include transform-translate-and-scale-base-position(-130px, 90px);
+				
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+		
+			@include for-desktop-up {
+				width: 430px;
+				@include transform-translate-and-scale-base-position(-180px, 90px);
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+				
+			&:hover {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+	
+		//CSS3 icon
+		.fa-css3-alt {
+			color: $css3-color;
+			&:hover {
+				color: $secondary-color-white;
+			}
+
+			&:hover ~ .c-skills-css3-info {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+
+		.c-skills-css3-info {
+			background-color: $background-color-hidden;
+			color: $secondary-color-white;
+			text-decoration: none;
+
+			@include transform-translate-and-scale-base-position(-180px, 90px);
+			@include transition-all-ease-out(0.3s);
+		
+			@include for-tablet-landscape-up {
+				width: 340px;
+				@include transform-translate-and-scale-base-position(-130px, 90px);
+				
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+		
+			@include for-desktop-up {
+				width: 430px;
+				@include transform-translate-and-scale-base-position(-180px, 90px);
+				&:hover {
+					@include skills-icon-hover-hidden-info-content;
+				}
+			}
+				
+			&:hover {
+				@include skills-icon-hover-hidden-info-content;
+			}
+		}
+	}
+
+	&-tools-h3 {
+		text-decoration: underline;
+		margin: 3% 0 7% 0;
+	}
+
+	.list-inline-item {
+		display: flex;
+		flex-flow: column wrap;
+	}
+}
+

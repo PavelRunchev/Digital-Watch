@@ -1,0 +1,15 @@
+
+.o-main-padding {
+	color: $primary-color-black;
+	@include for-phone-only {
+		padding: 7% 3% 0 5%;
+	}
+
+	@include for-tablet-portrait-up {
+		padding: 5% 5% 0 7%;
+	}
+
+	@include for-desktop-up {
+		padding: 7% 7% 0 10%;
+	}
+}

@@ -1,0 +1,21 @@
+
+.e-h3 {
+	text-align: left;
+	font-weight: bold;
+
+	@include for-phone-only {
+		font-size: 20px;
+	}
+
+	@include for-tablet-portrait-up {
+		font-size: 22px;
+	}
+
+	@include for-tablet-landscape-up {
+		font-size: 26px;
+	}
+
+	@include for-desktop-up {
+		font-size: 28px;
+	}
+}

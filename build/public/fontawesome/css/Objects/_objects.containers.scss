@@ -1,0 +1,22 @@
+.o-container {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.o-page-container {
+	width: 100%;
+	max-width: 100%;
+	padding: 3% 0;
+}
+
+.o-secondary-container {
+	width: 100%;
+	padding: 3% 0;
+	
+	& > p {
+		font-size: 20px;
+	}
+}

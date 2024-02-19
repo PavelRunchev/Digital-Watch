@@ -1,0 +1,12 @@
+.u-main-container {
+	width: 100%;
+	min-height: 100vh;
+	@include for-phone-only {
+		@include grid(1fr, auto auto auto auto auto auto, left, stretch);
+		display: block;
+	}
+
+	@include for-tablet-portrait-up {
+		@include grid(18rem 1fr, auto auto auto auto auto auto, normal, stretch);
+	}
+}

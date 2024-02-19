@@ -1,0 +1,93 @@
+.c-qualification {
+	padding-left: 0;
+	padding-right: 0;
+	width: 100%;
+
+	&-header {
+		width: 250px;
+	}
+
+	&-container-row-cards {
+		@include flex-box(row, space-evenly, stretch);
+
+		@include for-phone-only {
+			@include flex-box(column, flex-start, stretch);
+		}
+
+		@include for-tablet-portrait-up {
+			@include flex-box(column, flex-start, stretch);
+		}
+
+		@include for-tablet-landscape-up {
+			@include flex-box(row, space-evenly, stretch);
+		}
+	}
+
+	&-js-image-float-left {
+		position: relative;
+		border-radius: 5px;
+		cursor: pointer;
+		
+		@include for-phone-only {
+			width: 100%;
+			height: 220px;
+			display: block;
+			float: none;
+			margin: 20px auto;
+			@include transform-rotateX-rotateZ-translate3d(0deg, 0deg, 0px, 0px, 0px);
+			@include primary-box-shadow-black;
+		}
+
+		@include for-tablet-portrait-up {
+			width: 150px;
+			height: 120px;
+			float: left;
+			margin-right: 20px;
+			@include transform-rotateX-rotateZ-translate3d(60deg, -60deg, -120px, 0px, 70px);
+			@include box-shadow-3d-black-left;
+			@include transition-all-ease-out(1s);
+		}
+	}
+
+	&-js-image-float-right {
+		position: relative;
+		border-radius: 5px;
+		cursor: pointer;
+		
+		@include for-phone-only {
+			width: 100%;
+			height: 220px;
+			display: block;
+			float: none;
+			margin: 20px auto;
+			@include transform-rotateX-rotateZ-translate3d(0deg, 0deg, 0px, 0px, 0px);
+			@include primary-box-shadow-black;
+		}
+
+		@include for-tablet-portrait-up {
+			width: 150px;
+			height: 120px;
+			float: right;
+			margin-left: 20px;
+			@include box-shadow-3d-black-right;
+			@include transform-rotateX-rotateZ-translate3d(-60deg, 60deg, 120px, 0px, -70px);
+			@include transition-all-ease-out(1s);
+		}
+	}
+
+	.o-buttons {
+		display: block;
+		width: 100px;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+  

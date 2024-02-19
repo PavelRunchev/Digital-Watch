@@ -1,0 +1,26 @@
+a {
+	cursor: pointer;
+	outline: none;
+	color: $primary-color-blue;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0;
+
+	&:hover {
+		text-decoration: none;
+		outline: none;
+		color: $primary-color-blue;
+	}
+}
+
+a:not([href]):not([tabindex]) {
+	color: $primary-color-blue;
+	
+	&:hover {
+		color: $primary-color-blue;
+	}
+}
+
+
+
+

@@ -1,0 +1,32 @@
+.o-hidden {
+	opacity: 0;
+	width: auto;
+	height: auto;
+	display: inline-block;
+	position: absolute;
+	cursor: pointer;
+	text-decoration: underline;
+	background-color: $background-color-hidden;
+	border-radius: 5px;
+	color: $third-color-black;
+	padding: 15px 30px;
+	font-weight: bold;
+	font-style: italic;
+	transform: scale(0);
+	transition: all 0.3s ease-out;
+	z-index: 1;
+}
+
+.o-hidden::before {
+	position: absolute;
+	z-index: 1;
+	content: "";
+	right: calc(50% - 10px);
+	top: -10px;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent $background-color-hidden transparent;
+	transition-duration: 0.3s;
+	transition-property: transform;
+}
+

@@ -1,0 +1,146 @@
+.c-navigation {
+	background-color: $background-color-blue-opacity-100;
+	padding: 1% 0 0.7% 0;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+
+	&-container {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		@include for-tablet-down {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+		
+		@include for-tablet-landscape-up {
+			@include flex-box(row, space-between, center);
+		}
+	}
+
+	.c-navigation-btn-container {
+		height: 40px;
+		@include flex-box(row, space-between, stretch);
+
+		@include for-tablet-down {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.c-navigation-change-view {
+		text-transform: uppercase;
+		width: 180px;
+		padding: 0px 20px;
+		color: $primary-color-blue;
+		@include transition-all-ease-out(0.3s);
+	
+		&:hover {
+			outline: none;
+			opacity: 0.75;
+			@include transform-scale(0.9);
+		}
+	}
+
+	.navbar-collapse {
+		max-width: 60%;
+
+		@include for-tablet-landscape-up {
+			max-width: 80%;
+		}
+
+		@include for-tablet-down {
+			max-width: 100%;
+		}
+	
+	}
+
+	&-list {
+		list-style: none;
+		width: 700px;
+		margin-left: auto;
+		margin-bottom: 0;
+		@include flex-box(row, space-around, center);
+
+		@include for-tablet-landscape-up {
+			width: 700px;
+			font-size: 18px;
+		}
+
+		@include for-tablet-down {
+			width: 100%;
+			padding: 0;
+			margin-top: 2%;
+			@include flex-box(column, flex-start, left);
+		}
+
+		@include for-big-desktop-up {
+			width: 50%;
+			font-size: 22px;
+			padding-left: 0 !important;
+		}
+	}
+
+	&-item {
+		position: relative;
+		height: 45px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@include for-tablet-down {
+			width: 100%;
+		}
+	}
+
+	&-link {
+		cursor: pointer;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 20px;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		color: $primary-color-blue;
+		@include transition-all-ease-out(0.3s);
+
+		@include for-tablet-down {
+			width: inherit;
+			padding: 0 3%;
+			&:hover {
+				background-color: $secondary-color-white;
+			}
+		}
+
+		@include for-tablet-up {
+			&:hover {
+				@include transform-scale(0.96);
+			}
+		}
+	}
+
+	&-bottom-border {
+		@include for-tablet-down {
+			opacity: 0;
+		}
+
+		@include for-tablet-up {
+			width: 0;
+			opacity: 1;
+			height: 2px;
+			background-color: $primary-color-blue;
+			position: absolute;
+			left: 0;
+			top: 45px;
+			transition: all ease-out 0.3s;
+		}
+	}
+
+	&-link:hover ~ &-bottom-border {
+		@include for-tablet-up {
+			width: 100%;
+			left: 0;
+		}
+	}
+}

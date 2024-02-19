@@ -1,0 +1,68 @@
+.c-project {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 5%;
+
+	&-header {
+		width: 200px;
+	}
+
+	.o-primery-container {
+		padding: 0;
+		background-size: cover;
+		background-position: center;
+	}
+
+	&-background-color {
+		width: 100%;
+		padding: 3% 7%;
+		border-radius: 5px;
+	}
+
+	&-card-container {
+		background-color: transparent;
+		width: 100%;
+	}
+
+	&-btn {
+		display: block;
+		margin: 3% auto;
+		font-size: 24px;
+		background-color: transparent;
+		border: 1px solid $secondary-color-white;
+		color: $secondary-color-white;
+		font-weight: bold;
+		@include transition-all-ease-out(0.8s);
+		@include box-shadow-project-btn;
+		transform: perspective(400px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(-30deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
+
+		&:hover {
+			@include transform-scale(0.9);
+			color: $secondary-color-white;
+			background-color: transparent;
+			border: 1px solid $secondary-color-white;
+			@include no-box-shadow-white;
+		}
+	}
+
+	&-link {
+		display: inline-block;
+		color: $primary-color-blue;
+		@include transition-all-ease-out(0.6s);
+
+		&:hover {
+			@include transform-scale-translateX(1.1, 10px);
+			color: $primary-color-blue;
+			opacity: 0.8;
+		}
+	
+		& .fa-link,
+		& .fa-github-alt {
+			font-size: 24px;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,283 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+    #sideNav {
+        background: #bdcebe;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;    
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 19rem;
+        height: 100vh;
+        padding-top: 2rem;
+    }
+
+    #sideNav > a { text-decoration: none; cursor: pointer; }
+    #sideNav > a:hover { color: #fff; }
+        
+    #image {
+        cursor: pointer;
+        width: 60%;
+        padding: 3px;
+        margin: 10% 0;
+        border: 3px solid gray;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.7);
+        -moz-box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.7);
+        box-shadow: 0px 0px 107px -1px rgba(0,0,0,0.7);
+    }
+    #image:active {
+        transform: scale(1);
+        transition-duration: 0.3s;
+        animation: growImage 0.3s ease-in;
+        animation-fill-mode: both;
+        animation-duration: 0.3s;
+    }
+
+    #sideNav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #sideNav ul li a {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    #sideNav ul li a:hover { color: #FFF; }     
+    
+    #sideNav .development {
+        position: relative;
+        bottom: -29%;
+        font-size: 12px; 
+    }
+
+     /*
+    //Section ABOUT
+    */
+    .container-fluid {
+        background: #fff;
+        box-sizing: border-box;
+        padding: 10% 5% 0 10%;
+        margin: 0;
+        width: 76%;
+        position: relative;
+        top: 0;
+        left: 21rem;
+    }
+
+    .container-fluid .about h1 { 
+        color: #000; 
+        text-transform: uppercase;
+        font-size: 60px;
+    }
+    .container-fluid .about h1 > span { color: #bdcebe; }
+
+    .container-fluid .about > p:nth-of-type(1),
+    .container-fluid .about > p:nth-of-type(2) {
+        font-size: 30px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .container-fluid .about > p:nth-of-type(2) { margin-bottom: 2rem; }
+
+    .container-fluid .about p:nth-of-type(3) {
+        font-size: 18px;
+        margin: 5% 0;
+    }
+
+    .container-fluid .about .row { margin-top: 15%; }
+
+    .container-fluid .about > a {
+        cursor: pointer;
+        text-decoration: none;
+        color: #bdcebe;
+        color: #000;
+        font-size: 18px;
+    }
+    
+    .container-fluid .about a:hover { color: #bdcebe; }
+
+    .container-fluid .about .row { margin-bottom: 10rem; }
+
+    .container-fluid .about .row a {
+        cursor: pointer;
+        font-size: 26px;
+        border-radius: 100%;
+        padding: 0.9rem;
+        background: #000;
+        color: #fff;
+        margin: 1.5%;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+    }
+
+    .container-fluid .about .row .fa-facebook-f { padding: 0.9rem 1.3rem; }
+    .container-fluid .about .row .fa-google-plus-g { padding: 0.9rem 0.7rem; }
+    .container-fluid .about .row a:hover { background: #bdcebe; }
+
+    /*
+    //Section EDUCATION
+    */
+    #education { 
+        text-align: left; 
+        margin: 15% 0 20% 0;
+    }
+
+    #education h2 { margin: 5% 0; }
+    #education .container { 
+        width: 100%; 
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    #education .container #softuni .inner { 
+        margin-bottom: 2rem; 
+        font-size: 18px;
+    }
+    
+    #education .container #softuni img { 
+        width: 10%; 
+        border: 2px solid #fff;
+        margin-bottom: 5%;
+    }
+
+    #education .container #softuni > p {
+        margin-bottom: 2rem;
+        padding-bottom: 0;
+    }
+
+    #diploma { cursor: pointer; color: #000; text-decoration: none; }
+    #diploma:hover { color: #bdcebe; }
+
+    /*
+    //Section SKILLS
+    */
+    #skills {
+        text-align: left; 
+        margin: 12% 0 30% 0;
+    }
+
+    #skills > h2 { margin-bottom: 15%; }
+    #skills h3,
+    #skills ul { margin: 5% 0 }
+
+    #skills ul { padding: 0; }
+    #skills ul li a { font-size: 50px; margin: 0 0.5rem; cursor: pointer; }
+    #skills ul li a:hover { color: #bdcebe; }
+
+    /*
+    //Section QUALIFICATION
+    */
+    #qualification {
+        text-align: left; 
+        margin: 13% 0 5% 0;
+    }
+
+    #qualification > h2 { margin-bottom: 6%; }
+    #qualification p { font-size: 22px; }
+    #qualification p > a {
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: normal;
+        font-size: 18px;
+        color: #000;
+    }
+
+    #qualification #accordion .card { background: rgba(189,206,190,0.5); }
+    /* #qualification #accordion .card .card-body { background: rgba(189,206,190,0.5); } */
+
+    #qualification p > a:hover { font-weight: bold; }
+    #qualification p > i { font-size: 28px; }
+
+    /*
+    //SECTION PROJECTS
+    */
+    #projects {
+        text-align: left; 
+        margin: 10% 0 15% 0;
+    }
+
+    #projects a { 
+        cursor: pointer;
+        color: #bdcebe; 
+    }
+
+    #projects a:hover { color: #000; }
+
+    /*
+    //SECTION ENVIRONMENT
+    */
+
+    #environment {
+        text-align: left; 
+        margin: 12% 0 30% 0;
+    }
+
+    #environment a { cursor: pointer; text-decoration: none; }
+    #environment a:hover { color: #bdcebe; }
+
+    #environment img,
+    #qualification img {
+        width: 28px;
+        padding-bottom: 7px;
+    }
+
+@media screen and (max-width: 1394px) {
+    #sideNav { height: 100%; }
+}
+
+@media screen and (max-width: 1000px) {
+    #sideNav { width: 17rem; }
+    #sideNav > #image { width: 70%; margin: 2% 0; }
+    #sideNav ul li a { font-size: 16px; }
+    #sideNav .development { bottom: 1rem; }
+    #skills > ul > li > a { font-size: 40px; }
+    .container-fluid { left: 17rem; width: 76.5%; }
+    .container-fluid { padding: 10% 1% 0 5%; }
+    .container-fluid .about h1 { font-size: 44px; }
+    #about > section.about > p { font-size: 22px; }
+}
+
+@media screen and (max-width: 935px) {
+    #skills > ul > li > a { font-size: 30px; }
+}
+
+@media screen and (max-width: 796px) {
+    #skills > ul > li {
+        display: block;
+        width: 3rem;
+        margin: 3% auto;
+    }
+    #skills > ul > li > a { font-size: 50px; }
+}
+
+@media screen and (max-width: 770px) {
+    #sideNav > a { font-size: 20px; }
+    #sideNav > ul > li > a { font-size: 20px; padding: 0; }
+
+    .container-fluid { left: 17rem; width: 100%; margin: 0; }
+    .container-fluid { padding: 10% 1% 0 5%; }
+    .container-fluid .about h1 { font-size: 40px; }
+    .container-fluid .about > p { font-size: 20px; }
+
+
+    .container-fluid #qualification div { max-width: 100%; }
+}

@@ -1,0 +1,12 @@
+
+.u-sertificate-font-size {
+	cursor: pointer;
+	font-size: 16px;
+	display: inline-block;
+	color: $secondary-color-green;
+	@include transition-all-ease-out(0.3s);
+	&:hover {
+		color: $primary-color-black !important;
+		@include transform-scale(1.2);
+	}
+}

@@ -1,0 +1,23 @@
+
+.e-h2 {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	font-weight: bold;
+	text-align: left;
+
+	@include for-phone-only {
+		font-size: 22px;
+	}
+}
+
+.e-h2::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: $background-color-black;
+	left: 0%;
+	bottom: -40%;
+}

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Portfolio</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="mask-icon" type="image/png" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <!-- Font Roboto -->
+    <link href="./fonts/roboto/Roboto-Regular.eot" type="font/eot" rel="stylesheet">
+    <link href="./fonts/roboto/Roboto-Regular.ttf" type="font/ttf" rel="stylesheet">
+    <link href="./fonts/roboto/Roboto-Regular.woff" type="font/woff" rel="stylesheet">
+    <link href="./fonts/roboto/Roboto-Regular.woff2" type="font/woff2" rel="stylesheet">
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="./bootstrap-resource/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap-resource/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./bootstrap-resource/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./bootstrap-resource/mdb.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light c-navigation">
+      <div class="container-fluid c-navigation-container">
+        <div class="c-navigation-btn-container">
+          <a class="c-navigation-change-view o-visible-element" href="./changeView.html">Change View</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+       
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="c-navigation-list">
+            <li class="c-navigation-item o-visible-element">
+              <a class="c-navigation-link" href="#hr-about">About</a>
+              <span class="c-navigation-bottom-border"></span>
+            </li>
+            <li class="c-navigation-item o-visible-element">
+              <a class="c-navigation-link" href="#hr-education">Education</a>
+              <span class="c-navigation-bottom-border"></span>
+            </li>
+            <li class="c-navigation-item o-visible-element">
+                <a class="c-navigation-link" href="#hr-skills">Skills</a>
+                <span class="c-navigation-bottom-border"></span>
+              </li>
+            <li class="c-navigation-item o-visible-element">
+              <a class="c-navigation-link" href="#hr-qualification">Qualification</a>
+              <span class="c-navigation-bottom-border"></span>
+            </li>
+            <li class="c-navigation-item o-visible-element">
+              <a class="c-navigation-link" href="#hr-projects">Projects</a>
+              <span class="c-navigation-bottom-border"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="c-header">
+      <!-- Navbar -->
+     
+      <!-- Navbar -->
+      
+      <!-- Background image -->
+      <div
+        class="text-center bg-image c-header-background-image ripple"
+        data-mdb-ripple-color="light"
+        style="
+          background-image: url('image/bg-developer.jpg');
+          height: 600px;
+        "
+      >
+        <div class="mask c-header-mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          
+            <img src="./image/loading.gif" data-src="./image/DSCF0009.JPG" class="e-header-info-image c-header-info-image ripple"   alt="photo">
+            <div class="text-white">
+              <h1 class="m-4 font-weight-bold o-visible-element">PAVEL RUNCHEV</h1>
+              <h5 class="text-light o-visible-element"><i class="fas fa-globe-europe"></i> BULGARIA, <i class="fas fa-map-marker-alt"></i> GABROVO</h5>
+              <h5 class="text-light o-visible-element"><i class="fa fa-mobile"></i> 0879999436</h5>
+              <h5 class="text-light o-visible-element"><i class="fa fa-desktop"></i> Full Stack Developer</h5>
+            </div>
+           
+        </div>
+      </div>
+  <!-- Background image -->
+</header>
+
+<main>
+      <hr id="hr-about">
+
+      <section class="container-fluid c-about">
+        <div class="d-block mx-auto c-about-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5 o-visible-element">ABOUT</h2>
+        </div>
+        
+
+        <div class="o-container" id="accordion">
+            <div class="o-primery-container">
+
+                <div class="card-header" id="headingFour">
+                    <p class="text-left font-weight-normal o-visible-element">I’m a passionate developer who tends to be mindful for the entire product lifetime. I really enjoy being part of a team which creates a friendly and helpful environment. I truly believe our software can make a profound impact for the end users.</p>
+                    <button class="collapsed .o-button c-about-btn o-visible-element" id="see-more" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Read More
+                    </button>
+                </div>
+                <div class="text-center text-light p-3"></div>
+                <div class="card-body collapse text-left p-3" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
+                  <h3 class="text-center o-visible-element">Hobbies and Interests:</h5>
+                  <p class="o-visible-element">Apart from being a Web JS Developer, I enjoy most of my time being outdoors. In the cold and dark days i love watch fantasy genre movies and astronomy or playing video games with adventure and logically styles. During the warmer months I enjoy the fresh mountain air exploring strange places related to interesting historical events.</p>
+                  <p class="o-visible-element">During my free time i exploring the latest technology advancements in the front-end web development world.</p>
+                  <h3 class="text-center o-visible-element">Knowledge of languages</h5>
+                  <p class="text-center o-visible-element"><span class="font-weight-bold">B1</span> (Intermediate English)</p>
+                </div>
+
+                <div class="c-about-data my-5">
+                  <span class="c-about-data-secondary-info">
+                    <i class="fab fa-skype"></i>
+                    <span class="o-hidden c-about-data-secondary-info-skype o-visible-element">raidersgb</span>
+                  </span>
+                  <span class="c-about-data-secondary-info">
+                    <i class="fab fa-github"></i>
+                    <span class="o-hidden c-about-data-secondary-info-github o-visible-element">PavelRunchev</span>
+                  </span >
+                  <span class="c-about-data-secondary-info">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="o-hidden c-about-data-secondary-info-linkedin o-visible-element">Pavel Runchev</span>
+                  </span>
+                  <span class="c-about-data-secondary-info">
+                    <i class="fas fa-envelope"></i>
+                    <span class="o-hidden c-about-data-secondary-info-gmail o-visible-element">pavel.runchev@gmail.com</span>
+                  </span>
+                  <span class="c-about-data-secondary-info">
+                    <i class="fab fa-facebook-square"></i>
+                    <span class="o-hidden c-about-data-secondary-info-facebook o-visible-element">Pavel Runchev</span>
+                  </span>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+      <hr id="hr-education">
+
+      <section class="container-fluid c-education">
+        <div class="d-block mx-auto c-education-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5 o-visible-element">EDUCATION</h2>
+        </div>
+        
+        <div class="o-container">
+          <div class="o-primery-container">
+
+            <h3 class="text-dark text-center mb-5 mt-2 w-100 o-visible-element">Software Engineering - Software University</h3>
+            <div class="c-education-container">
+              <div class="c-education-softuni-image-container o-visible-element">
+                <img class="image c-img-1" src="./image/softuni-logo.jpg" alt="photo">
+                <img class="image c-img-2" src="./image/softuni-image.jpg" alt="photo">
+                <img class="image c-img-3" src="./image/leason.jpg" alt="photo">
+              </div>
+              <p class="text-left o-visible-element">Software University (SoftUni) is an organization that provides high quality software development education, profession and a career start for thousands of young people in Bulgaria. SoftUni teaches its students how to be skillful software engineers, using the latest technologies, tools and platforms.</div>
+              <div class="c-education-diploma-container">
+                <a class="o-buttons c-education-diploma-btn o-visible-element" ><i class="fas fa-graduation-cap"></i> Diploma Sertificate</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <hr id="hr-skills">
+
+      <section class="container-fluid c-skills ripple" data-mdb-ripple-color="light">
+        <div class="d-block mx-auto c-skills-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5 o-visible-element">SKILLS</h2>
+        </div>
+      
+        <div class="o-container c-skills-container" style="background-image: url('./image/React-Developer-Tools.jpg');">
+          <div class="c-skills-primery-container" >
+
+            <h3 class="c-skills-tools-h3 text-center text-light font-weight-bold font-italic o-visible-element">Programming Languages &amp; Tools</h3>
+            <ul class="c-skills-tools-container">
+              
+                <li class="list-inline-item">
+                  <i class="fab fa-js-square o-tools-icon"></i>
+                  <span class="o-hidden c-skills-js-info text-center">
+                    A JavaScript language for building web applications
+                    <img class="o-gif" src="./image/JS.gif" alt="gif">
+                  </span>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-react o-tools-icon"></i>
+                  <span class="o-hidden c-skills-react-info text-center">
+                    A JavaScript library for building user interfaces
+                    <img class="o-gif" src="./image/react.gif" alt="gif">
+                  </span>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-angular o-tools-icon" ></i>
+                  <span class="o-hidden c-skills-angular-info text-center">
+                    The modern web developer's platform
+                    <img class="o-gif" src="./image/angular.gif" alt="gif">
+                  </span>
+                </li>
+                <li class="list-inline-item">
+                  <i class="fab fa-node o-tools-icon"></i>
+                  <span class="o-hidden c-skills-nodeJS-info text-center">
+                    A NodeJS is a JavaScript runtime build on Chrome V8 engine
+                    <img class="o-gif" src="./image/node-js.gif" alt="gif">
+                  </span>
+                </li>
+            </ul>
+
+            <ul class="c-skills-tools-container">
+              <li class="list-inline-item">
+                <i class="fab fa-sass o-tools-icon"></i>
+                <span class="o-hidden c-skills-sass-info text-center">
+                  A SASS is powerful professional grade CSS extension
+                  <img class="o-gif" src="./image/scss.gif" alt="gif">
+                </span>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-npm o-tools-icon"></i>
+                <span class="o-hidden c-skills-npm-info text-center">
+                  Take your JavaScript development up a notch
+                  <img class="o-gif" src="./image/npm.gif" alt="gif">
+                </span>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-css3-alt o-tools-icon"></i>
+                <span class="o-hidden c-skills-css3-info text-center">
+                  CSS is the language we use to style an HTML document
+                  <img class="o-gif" src="./image/css3.gif" alt="gif">
+                </span>
+              </li>
+              <li class="list-inline-item">
+                <i class="fab fa-html5 o-tools-icon"></i>
+                <span class="o-hidden c-skills-html5-info text-center">
+                  Allows the building of more diverse and powerful Web sites and applications
+                  <img class="o-gif" src="./image/HTML5.gif" alt="gif">
+                </span>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+
+      <hr id="hr-qualification">
+      
+      <section class="container-fluid c-qualification" >
+        <div class="d-block mx-auto c-qualification-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5 o-visible-element">QUALIFICATION</h2>
+        </div>
+        
+        <div class="o-container">
+            <div class="o-primery-container">
+
+              <div class="c-qualification-container-row-cards">
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-left"  src="./image/javascript-image.jpg" alt="image">
+                  <h3 class="text-center o-visible-element">JS</h3>
+                    <p class="card-text o-visible-element">JavaScript is a scripting or programming language that allows you to implement complex features on web pages every time a web page does more than just sit there and display static information for you to look at displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. You can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.</p>
+                    <a href="./views/js.html" class="o-buttons text-center o-visible-element">Read More</a>
+                </div>
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-right" src="./image/npm-nodeJS.jpg" alt="image">
+                  <h3 class="text-center o-visible-element">JS Libraries</h3>
+                  <p class="card-text o-visible-element">There are a billion webpages, and many of them are interactive in some way - in fact, many of them are interactive in the same ways.In JavaScript, the way we do that is by using a library. A library is a JavaScript file that contains a bunch of functions, and those functions accomplish some useful task for your webpage.
+                      How do we know what functions we can use? We could look at the JavaScript file, if it's short, or better, we could look at the documentation. Most libraries have documentation with a list of available functions or a real-world example.</p>
+                  <a href="./views/js-library.html"  class="o-buttons text-center o-visible-element">Read More</a>
+                </div>
+
+              </div>
+              <div class="c-qualification-container-row-cards">
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-left" src="./image/HTML-image.jpg" alt="image">
+                  <h3 class="text-center o-visible-element">HTML5</h3>
+                  <p class="card-text o-visible-element">HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+                    "Hypertext" refers to links that connect web pages to one another, either within a single website or between websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.</p>
+                  <a href="./views/html.html" class="o-buttons text-center o-visible-element">Read More</a>
+                </div>
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-right" src="./image/CSS-image.png" alt="image">
+                  <h3 class="text-center o-visible-element">CSS3</h3>
+                  <p class="card-text o-visible-element">CSS (Cascading Style Sheets) is a language for styling the webpage. We can change the appearance and the layout of the webpage by using CSS. We can also define how a website’s view changes in different screens like desktops, tablets, and mobile devices.
+                            CSS is not a programming language, like C# or JavaScript. However, CSS is not as easy as it seems. If you try to use it without understanding, you will have difficulties in web development. Therefore, learning CSS is as important as learning a programming language.
+                            Let’s continue with an example to reveal the effect of CSS on a website.</p>
+                  <a href="./views/css.html" class="o-buttons text-center o-visible-element">Read More</a>
+                </div>
+
+              </div>
+              <div class="c-qualification-container-row-cards">
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-left" src="./image/Java-image.jpg" alt="image">
+                  <h3 class="text-center o-visible-element">Java</h3>
+                  <p class="card-text o-visible-element">Java is a computer programming language. It enables programmers to write computer instructions using English-based commands instead of having to write in numeric codes. It’s known as a high-level language because it can be read and written easily by humans. Java has a set of rules that determine how the instructions are written. These rules are known as its syntax. Once a program has been written, the high-level instructions are translated into numeric codes that computers can understand and execute.</p>
+                  <a href="./views/java.html" class="o-buttons text-center o-visible-element">Read More</a>
+                </div>
+
+                <div class="o-card">
+                  <img class="c-qualification-js-image-float-right" src="./image/CSharp-image.jpg" alt="image">
+                  <h3 class="text-center o-visible-element">C#</h3>
+                  <p class="card-text o-visible-element">C Sharp is a general-purpose, modern and object-oriented programming language pronounced as “C Sharp”. It was developed by Microsoft led by Anders Hejlsberg and his team within the .NET initiative and was approved by the European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO). C# is among the languages for Common Language Infrastructure. C Charp (C#) is a lot similar to Java syntactically and is easy for users who have knowledge of C, C++ or Java.</p>
+                  <a href="./views/csharp.html" class="o-buttons text-center o-visible-element">Read More</a>
+                </div>
+
+              </div>
+              
+            </div>
+          
+        </div>
+      </section>
+
+      <hr id="hr-projects">
+
+      <section class="container-fluid c-project ripple" data-mdb-ripple-color="light">
+        <div class="d-block mx-auto c-project-header">
+          <h2 class="text-dark text-center font-weight-bold mt-5 mb-5 o-visible-element">PROJECTS</h2>
+        </div>
+        
+        <div class="o-container" >
+          <div id="accordion" class="o-primery-container" style="background-image: url('./image/developer_environment.jpeg'); height: auto;">
+            <div class="c-project-background-color" style="background-color: rgba(0,0,0,0.7)">
+
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingOne">
+                  <button class="collapsed o-button c-project-btn o-visible-element" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fab fa-gulp"></i> Jekyll - Project
+                  </button>
+              </div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold">JEKYLL, GULP, HTML5, SASS</span>!
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">Medieval Castles</span>!</div>
+                  <div class="text-dark">Link to project - 
+                    <a class="c-project-link deploy-jekyll-project">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="text-dark">View code to GitHub - 
+                    <a class="c-project-link github-link-jekyll-project">
+                      <i class="fab fa-github-alt"></i>
+                    </a>
+                  </div>
+                  <div class="text-dark">Grade - <span class="font-italic font-weight-bold">6.00</span></div>
+                  <div class="text-dark ">Sertificate - 
+                    <a class="font-italic c-project-link sertificate-jekyll-project">YES</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingTwo">
+                  <button class="collapsed o-button c-project-btn o-visible-element" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="fab fa-react"></i> React JS - Project
+                  </button>
+              </div>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold">React, HTML5, Bootstrap 4, SASS</span>!
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">Gems Catalog</span>!</div>
+                    <div class="text-dark">Link to project - 
+                      <a class="c-project-link deploy-react-project">
+                        <i class="fas fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">View code to GitHub - 
+                      <a class="c-project-link github-link-react-project">
+                        <i class="fab fa-github-alt"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">Grade - <span class="font-italic font-weight-bold">6.00</span></div>
+                    <div class="text-dark">Sertificate - 
+                      <a class="font-italic c-project-link sertificate-react-project">YES</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingThree">
+                  <button class="collapsed o-button c-project-btn o-visible-element" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fab fa-angular"></i> Angular - Project
+                  </button>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold"> Angular 7, Redux, HTML5, SASS, Bootstrap 4</span>!
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">Board Games</span>!</div>
+                  <div class="text-dark">Link to project - 
+                    <a class="c-project-link deploy-angular-project">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="text-dark">View code to GitHub - 
+                    <a class="c-project-link github-link-angular-project">
+                      <i class="fab fa-github-alt"></i>
+                    </a>
+                  </div>
+                  <div class="text-dark">Grade - <span class="font-italic font-weight-bold">6.00</span></div>
+                  <div class="text-dark">Sertificate - 
+                    <a class="font-italic c-project-link sertificate-angular-project">YES</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingFour">
+                <button class="collapsed o-button c-project-btn o-visible-element" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="fab fa-node-js"></i> ExpressJS - Project
+                </button>
+              </div>
+
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold">ExpressJS, NodeJS, Mongoose, MongoDB, HandleBars, Bootstrap 4, HTML5, SASS</span> and other libraries!
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">SharedTripp</span>!</div>
+
+                    <div class="text-dark">Link to project - 
+                      <a class="c-project-link deploy-ExpressJS-project">
+                        <i class="fas fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">View code to GitHub - 
+                      <a class="c-project-link github-link-ExpressJS-project">
+                        <i class="fab fa-github-alt"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">Grade - <span class="font-italic font-weight-bold">6.00</span></div>
+                    <div class="text-dark">Sertificate - 
+                      <a  class="font-italic c-project-link sertificate-ExpressJS-project">YES</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingFive">
+                  <button class="collapsed o-button c-project-btn o-visible-element" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <i class="fab fa-node-js"></i> ExpressJS Project
+                  </button>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold">ExpressJS, NodeJS, Mongoose, MongoDB Atlas, HandleBars, Bootstrap 4, HTML5, SASS, secure-URL: JWT</span>,  and other libraries! Deployed to <span class="font-weight-bold">Heroku</span>.
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">Blogger</span>!</div>
+                    <div class="text-dark">Link to site - 
+                      <a class="c-project-link deploy-ExpressJS-blogger-project">
+                        <i class="fas fa-link"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">View code to GitHub - 
+                      <a class="c-project-link github-link-ExpressJS-blogger-project">
+                        <i class="fab fa-github-alt"></i>
+                      </a>
+                    </div>
+                    <div class="text-dark">Grade - <span class="font-italic font-weight-bold">has not been grades!</span></div>
+                    <div class="text-dark">Sertificate - <span class="font-italic font-weight-bold">has not been sertificates!</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card c-project-card-container">
+              <div class="card-header" id="headingSix">
+                  <button class="collapsed o-button c-project-btn o-visible-element" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    <i class="fab fa-gulp"></i> Jekyll - Project
+                  </button>
+              </div>
+          
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body bg-light text-dark">
+                  For implement in my simple web project I used following tools! - <span class="font-weight-bold">JEKYLL, GULP, HTML5, SASS, JS</span>!
+                  <div class="text-dark">Build environment - <span class="font-weight-bold">VS Code</span>!</div>
+                  <div class="text-dark">Project name - <span class="font-weight-bold">My Blog</span>!</div>
+                  <div class="text-dark">Link to project - 
+                    <a class="c-project-link deploy-jekyll-project-my-blog">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                  <div class="text-dark">View code to GitHub - 
+                    <a class="c-project-link github-link-jekyll-project-my-blog">
+                      <i class="fab fa-github-alt"></i>
+                    </a>
+                  </div>
+                  <div class="text-dark">Grade - <span class="font-italic font-weight-bold">6.00</span></div>
+                  <div class="text-dark ">Sertificate - 
+                    <a class="font-italic c-project-link sertificate-jekyll-project-my-blog">YES</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+</main>
+<footer class="c-footer ripple" 
+  data-mdb-ripple-color="light"
+  style="background-image: url('./image/dev-center.png'); height: auto;"> 
+
+      <section class="c-footer-development-tools" class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+        <h2 class="text-light text-center text-uppercase o-visible-element">Development Environments</h2>
+  
+          <div class="c-footer-development-tools-container">
+           
+            <div class="c-footer-development-tools-container-C o-visible-element">
+                <h5 class="text-light font-weight-bold mb-2 text-center">C#</h5>
+                <div class="c-footer-development-tools-container-links">
+                    <a class="c-footer-development-tools-container-link visual-studio-link">
+                      <img class="c-footer-development-tools-image" src="./image/visual-studio.png">
+                    </a>
+                    <a class="c-footer-development-tools-container-link sql-server-management-studio-link">
+                      <img class="c-footer-development-tools-image" src="./image/SQL Server Management Studio.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="c-footer-development-tools-container-JS o-visible-element">
+              <h5 class="text-light font-weight-bold mb-2 text-center">JS</h5>
+              <div class="c-footer-development-tools-container-links">
+                  <a class="c-footer-development-tools-container-link vs-code-link">
+                    <img class="c-footer-development-tools-image" src="./image/vscode.jpg" alt="logo">
+                  </a>
+                  <a class="c-footer-development-tools-container-link web-storm-link">
+                    <img class="c-footer-development-tools-image" src="./image/webstorm-image.jpg">
+                  </a>
+                    <a class="c-footer-development-tools-container-link mongoDB-link">
+                      <img class="c-footer-development-tools-image" src="./image/mongodb.png">
+                  </a>
+              </div>
+            </div>
+  
+            <div class="c-footer-development-tools-container-Java o-visible-element">
+                <h5 class="text-light font-weight-bold mb-2 text-center">Java</h5>
+                <div class="c-footer-development-tools-container-links">
+                    <a class="c-footer-development-tools-container-link intellij-idea-link">
+                      <img class="c-footer-development-tools-image" src="./image/intellij-idea.jpg">
+                    </a>
+                    <a class="c-footer-development-tools-container-link mySQL-server-link">
+                      <img class="c-footer-development-tools-image" src="./image/MySQL.png">
+                    </a>
+                </div>
+            </div>                  
+          </div>
+
+          <div class="c-footer-container-support">
+            
+            <a class="c-footer-support-link o-visible-element" href="./views/support.html"><i class="fas fa-thumbs-up mr-2"></i> Support</a>
+          </div>
+          <div class="text-light text-center font-weight-bold o-visible-element">Portfolio Tools:
+            <i class="fab fa-js-square mx-2"></i> 
+            <i class="fab fa-html5 mr-2"></i> 
+            <i class="fab fa-css3-alt mr-2"></i>
+            <i class="fa fa-bold mr-2"></i> 
+            <i class="fab fa-sass mr-2"></i> 
+          </div>
+          <div class="text-light text-center font-weight-bold o-visible-element">&copy; 2019-2021 Powered by Pavel Runchev</div>    
+          <div class="text-light text-center font-weight-bold o-visible-element">All rights reserved!</div>            
+      </section>
+</footer>
+
+    <!-- loading jQuery -->
+    <script src="./js/bootstrap-js/jquery.min.js"></script>
+    <!-- loading Popper.min.js - needed after respone navigation click show nav menu -->
+    <script src="./js/bootstrap-js/popper.min.js"></script>
+    <script src="./js/bootstrap-js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap-js/scrolling.js"></script>
+    <script src="./js/bootstrap-js/mdb.min.js"></script>
+   
+    <script src="./js/ease-loading.js"></script>
+    
+    <script src="./js/app.js"></script>
+    <script src="./js/page-main.js"></script>
+    <script src="./js/my-colousel.js"></script>
+    
+</body>
+</html>

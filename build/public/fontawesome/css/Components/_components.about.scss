@@ -1,0 +1,175 @@
+
+.c-about {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+
+	&-header {
+		width: 200px;
+	}
+
+	&-btn {
+		border: none;
+		display: block;
+		margin: 0 auto;
+		background-color: transparent;
+		font-weight: bold;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		cursor:pointer;
+		padding: 15px 35px;
+		color: $primary-color-blue;
+		@include transition-background-color;
+
+		&:hover {
+			background-color: $primary-color-blue;
+			color: $secondary-color-white;
+			@include box-shadow-btn-hover;
+		}
+		
+		&:active {
+			position:relative;
+			top:1px;
+		}
+	}
+
+	&-data {
+		@include flex-box(row, space-around, center);
+		margin: 0 auto;
+
+		@include for-phone-only {
+			width: 80%;
+			max-width: 80%;
+		}
+
+		@include for-tablet-portrait-up {
+			width: 50%;
+			max-width: 50%;
+		}
+
+		@include for-desktop-up {
+			width: 30%;
+			max-width: 30%;
+		}
+	
+		& i {
+			@include transition-all-ease-out(0.3s);
+			&:hover {
+				@include transform-scale(1.5);
+			}
+		}
+	
+		.c-about-data-secondary-info {
+			cursor: pointer;
+		}
+		
+		//skype info
+		.c-about-data-secondary-info-skype {
+			@include transform-translate-and-scale-base-position(-50px, 12px);
+			@include transition-all-ease-out(0.3s);
+
+			&:hover {
+				display: block;
+				position: absolute;
+				@include transform-translate-and-scale(-50px, 12px);
+				opacity: 1;
+			}
+		}
+		
+		.fa-skype:hover ~ .c-about-data-secondary-info-skype {
+			display: block;
+			position: absolute;
+			@include transform-translate-and-scale(-50px, 12px);
+			opacity: 1;
+		}
+		
+		//github info
+		.c-about-data-secondary-info-github {
+			@include transform-translate-and-scale-base-position(-70px, 12px);
+			@include transition-all-ease-out(0.3s);
+
+			&:hover {
+				display: block;
+				position: absolute;
+				@include transform-translate-and-scale(-70px, 12px);
+				opacity: 1;
+			}
+		}
+		
+		.fa-github:hover ~ .c-about-data-secondary-info-github {
+			display: block;
+			position: absolute;
+			@include transform-translate-and-scale(-70px, 12px);
+			opacity: 1;
+		}
+		
+		//linkedin info
+		.c-about-data-secondary-info-linkedin {
+			@include transform-translate-and-scale-base-position(-75px, 10px);
+			@include transition-all-ease-out(0.3s);
+
+			&:hover {
+				display: block;
+				position: absolute;
+				@include transform-translate-and-scale(-75px, 10px);
+				opacity: 1;
+			}
+		}
+		
+		.fa-linkedin-in:hover ~ .c-about-data-secondary-info-linkedin {
+			display: block;
+			position: absolute;
+			@include transform-translate-and-scale(-75px, 10px);
+			opacity: 1;
+		}
+		
+		//gmail info
+		.c-about-data-secondary-info-gmail {
+			@include transform-translate-and-scale-base-position(-115px, 10px);
+			@include transition-all-ease-out(0.3s);
+
+			&:hover {
+				display: block;
+				position: absolute;
+				@include transform-translate-and-scale(-115px, 10px);
+				opacity: 1;
+			}
+		}
+		
+		.fa-envelope:hover ~ .c-about-data-secondary-info-gmail {
+			display: block;
+			position: absolute;
+			@include transform-translate-and-scale(-115px, 10px);
+			opacity: 1;
+		}
+		
+		//facebook info
+		.c-about-data-secondary-info-facebook {
+			@include transform-translate-and-scale-base-position(-71px, 12px);
+			@include transition-all-ease-out(0.3s);
+
+			&:hover {
+				display: block;
+				position: absolute;
+				@include transform-translate-and-scale(-71px, 12px);
+				opacity: 1;
+			}
+		}
+		
+		.fa-facebook-square:hover ~ .c-about-data-secondary-info-facebook {
+			display: block;
+			position: absolute;
+			@include transform-translate-and-scale(-71px, 12px);
+			opacity: 1;
+		}
+	}
+}
+
+
+
+
+
+
+
+

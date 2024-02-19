@@ -1,0 +1,47 @@
+//import fontawesome icons
+@import url('../fontawesome/css/all.css');
+@import url('../fontawesome/css/brands.css');
+
+//import font Roboto 400
+@font-face {
+	font-family: 'Verdana';
+	src: url('../fonts/verdana/Verdana.eot') format('embedded-opentype');
+	src: url('../fonts/verdana/Verdana.ttf') format('truetype');
+	src: url('../fonts/verdana/Verdana.woff') format('woff');
+	src: url('../fonts/verdana/Verdana.woff2') format('woff2');
+	font-display: swap;
+}
+
+//import font Montserrat 400
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat/Montserrat-Regular.eot') format('embedded-opentype');
+	src: url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype');
+	src: url('../fonts/montserrat/Montserrat-Regular.woff') format('woff');
+	src: url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2');
+	font-display: swap;
+}
+
+//import font Lato 400
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/lato/Lato-Regular.eot') format('embedded-opentype');
+	src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+	src: url('../fonts/lato/Lato-Regular.woff') format('woff');
+	src: url('../fonts/lato/Lato-Regular.woff2') format('woff2');
+	font-display: swap;
+}
+
+body {
+	font-family: 'Verdana', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', 'Lato', Helvetica;
+}
+
+button, a {
+	font-family: 'Lato', 'Montserrat', Helvetica;
+}
+
+

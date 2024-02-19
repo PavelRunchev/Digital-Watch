@@ -1,0 +1,13 @@
+.nav-item {
+	text-decoration: none;
+	list-style: none;
+}
+
+.list-inline-item:not(:last-child) {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.list-inline-item {
+	margin: 3% 0;
+}

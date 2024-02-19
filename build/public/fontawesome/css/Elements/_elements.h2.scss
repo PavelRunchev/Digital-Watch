@@ -1,0 +1,18 @@
+h2 {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+h2::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	min-width: 30%;
+	max-width: 60%;
+	height: 1px;
+	background: $background-color-black;
+	left: 20%;
+	bottom: -40%;
+}
