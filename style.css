@@ -184,19 +184,44 @@ a, button {
 .card {
 	display: none;
 	position: fixed !important;
-	left: calc(100% / 2 - 5%);
-	top: calc(100% / 2 - 10%);
+	top: calc(50% - 200px / 2);
+	left: calc(50% - 300px / 2);
 	width: 300px;
-	height: 200px;
+	height: auto;
 	-webkit-box-shadow: 0px 0px 5px 1px hsl(204deg, 100%, 100%) !important; 
 	box-shadow: 0px 0px 5px 1px hsl(204deg, 100%, 100%) !important;
+	z-index: 1000;
+	color: hsl(211deg, 95%, 51%);
+	justify-content: center;
+	align-items: center;
+}
+
+.container-bell {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-bell > .fa-bell {
+	font-size: 30px;
+	animation: bell-alarm infinite 1.0s linear;
+
+}
+
+.vibration-alarm-image {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 10px auto;
 }
 
 .audio-file-btn-ok,
 .audio-file-btn-stop {
-	background-color: hsl(204deg, 100%, 41%) !important;
+	background-color: hsl(211deg, 95%, 51%) !important;
 	color: hsl(204deg, 100%, 100%) !important;
-	border: 1px solid hsl(204deg, 100%, 41%) !important;
+	border: 1px solid hsl(211deg, 95%, 51%) !important;
 	transition: all 0.3s ease-out;
 }
 
@@ -205,10 +230,28 @@ a, button {
 }
 
 /* Responsive Design*/
+@media screen and (min-width: 1400px) {
+	.watch-container {
+		grid-template-columns: 150px 1fr 150px;
+		grid-template-rows: 300px 1fr 250px;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 1399px) {
+	.watch-container {
+		grid-template-columns: 100px 1fr 100px;
+		grid-template-rows: 300px 1fr 250px;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 @media screen and (max-width: 992px) {
 	.watch-container {
 		grid-template-columns: 50px 1fr 50px;
-		grid-template-rows: 300px 1fr 200px;
+		grid-template-rows: 300px 1fr 250px;
 		justify-content: center;
 		align-items: center;
 	}
@@ -229,10 +272,9 @@ a, button {
 	.watch-container {
 		grid-template-columns: 20px 1fr 20px;
 		grid-template-rows: auto 1fr auto;
-		grid-template-rows: auto 1fr auto;
 		justify-content: center;
 		align-items: center;
-		padding: 40px 0px;
+		padding: 40px 0px 50px 0px;
 	}
 
 	.image {
@@ -276,6 +318,11 @@ a, button {
 	.date {
 		font-size: 20px;
 	}
+
+	.card {
+		width: 100%;
+		left: calc(0% / 2);
+	}
 }
 
 
@@ -286,6 +333,20 @@ a, button {
 
 	to {
 		opacity: 1;
+	}
+}
+
+@keyframes bell-alarm {
+	0% {
+		transform: rotate(-15deg);
+	}
+
+	50% {
+		transform: rotate(15deg);
+	}
+
+	100% {
+		transform: rotate(-15deg);
 	}
 }
 

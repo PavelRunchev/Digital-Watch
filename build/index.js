@@ -1,5 +1,8 @@
 
 (function() {
+    let card = document.querySelector(".card");
+    displayNone(card);
+
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     let globalDate = [0, 0];
     let alarm = [0, 0];
@@ -48,8 +51,7 @@
 
     let activatedAlaramOn = document.querySelector(".alarm-show-container");
 
-    let card = document.querySelector(".card");
-    card.style.display = "none";
+    
     let alarmInfo = document.querySelector('.alarm-time-info');
     let alarmTimeDigit = document.querySelector('.alarm-time-digit');
     let audioFileInfo = document.querySelector('.audio-file-info');
@@ -61,6 +63,10 @@
     audioBtnStop.addEventListener("click", audioStop);
 
     let audioTag = document.querySelector('.audio-tag');
+    audioTag.src = "./public/mixkit-warning-alarm-buzzer-991.wav";
+
+    let vibrateAlarmImg = document.querySelector('.vibration-alarm-image');
+    displayNone(vibrateAlarmImg);
 
     function DigitalWatch() {
         setInterval(() => {
@@ -89,6 +95,8 @@
                 alarmOn();
                 alarmBegin = false;
             }
+
+           
     
         }, 1000);
     }
@@ -104,7 +112,6 @@
     }
 
     function getFirstDigit(num) { return parseInt(num / 10); }
-
     function getLastDigit(num) { return num % 10; }
 
     function setAlarm(e) {
@@ -125,6 +132,7 @@
             setClass(alarmOptions, clearAlarmBtn, true);
             alarm[0] = Number(hour);
             alarm[1] = Number(minute);
+            alarmBegin = true;
         }
     }
 
@@ -139,7 +147,8 @@
         withVibration = false;
         audioTag.pause();
 
-        card.style.display = "none";
+        displayNone(card);
+        hideAudioAndVibration();
     }
 
     function setClass(clickedElement, showElement, isActivatedAlarm) {
@@ -159,40 +168,46 @@
     }
 
     function alarmOn() {
+
         if(withAudioFile) {
             setClass(alarmInfo, audioFileInfo, null);
         }
 
         if(withVibration) {
             setClass(alarmInfo, vibrationInfo, null);
+
+            vibrateAlarmImg.src = "./public/images/vibrate-alarm.gif";
+            displayBlock(vibrateAlarmImg);
         }
 
         if(withAudioFile === false && withVibration === false) {
-            if(audioFileInfo.className === "card-text mt-3 text-center audio-file-info show") {
-                audioFileInfo.classList.remove("show");
-                audioFileInfo.classList.add("hide");
-            }
-          
-            if(vibrationInfo.className === "card-text mt-3 text-center vibration-info show") {
-                vibrationInfo.classList.remove("show");
-                vibrationInfo.classList.add("hide");
-            }
+            hideAudioAndVibration();
 
             alarmInfo.classList.remove("hide");
             alarmInfo.classList.add("show");
             alarmTimeDigit.innerHTML = `${String(globalDate[0]).padStart(2, '0')}:${String(globalDate[1]).padStart(2, '0')}`;
         }
 
-        card.style.display = "flex";
-        console.log(card);
+        displayFlex(card);
     }
 
-    function audioOn(e) {
-        if(withAudioFile) audioTag.play();
-    }
+    function audioOn(e) { if(withAudioFile) audioTag.play(); }
+    function audioStop(e) { audioTag.pause(); }
 
-    function audioStop(e) {
-        audioTag.pause();
+    function displayNone(elem) { elem.style.display = "none"; }
+    function displayBlock(elem) { elem.style.display = "block"; }
+    function displayFlex(elem) { elem.style.display = "flex"; }
+
+    function hideAudioAndVibration() {
+        if(audioFileInfo.className === "card-text mt-3 text-center audio-file-info show") {
+            audioFileInfo.classList.remove("show");
+            audioFileInfo.classList.add("hide");
+        }
+      
+        if(vibrationInfo.className === "card-text mt-3 text-center vibration-info show") {
+            vibrationInfo.classList.remove("show");
+            vibrationInfo.classList.add("hide");
+        }
     }
 
     DigitalWatch();

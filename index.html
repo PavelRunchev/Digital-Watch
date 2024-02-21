@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./style.css" />
    
     <link href="./public/fontawesome/css/regular.css" rel="stylesheet">
     <link rel="stylesheet" href="./public/bootstrap-resource/bootstrap.css">
@@ -17,16 +17,21 @@
 </head>
 <body>
     <div class="watch-container">
+
         <div class="card">
             <div class="card-body w-100 justify-content-center align-items-center">
-              <h5 class="card-title text-center"><i class="far fa-bell"></i> Alarm</h5>
-              <p class="card-text mt-3 text-center alarm-time-info hide">Alarm time: <span class="alarm-time-digit"></span></p>
-              <p class="card-text mt-3 text-center audio-file-info hide">Play audio file...</p>
-              <p class="card-text mt-3 text-center vibration-info hide">Vibrate...</p>
-              <div class="d-flex w-100 justify-content-center align-items-center" >
+                <h5 class="card-title text-center">Alarm</h5>
+                <div class="container-bell my-3">   <i class="fas fa-bell"></i> </div>
+             
+                <p class="card-text mt-3 text-center alarm-time-info hide">Alarm time: <span class="alarm-time-digit"></span></p>
+                <p class="card-text mt-3 text-center audio-file-info hide">Play audio file...</p>
+                <p class="card-text mt-3 text-center vibration-info hide">Vibrate...</p>
+                <img class="vibration-alarm-image" src="./public/images/vibrate-alarm.gif" alt=""/>
+
+                <div class="d-flex w-100 justify-content-center align-items-center" >
                     <button type="button" class="btn audio-file-btn-ok mr-3" data-mdb-ripple-init>Ok</button>
                     <button type="button" class="btn audio-file-btn-stop" data-mdb-ripple-init>Stop</button>
-              </div>
+                </div>
             </div>
         </div>
 
@@ -62,7 +67,6 @@
                         <span class="mr-3">Vibration</span>
                     <input class="form-check-input check-vibration-btn" type="radio" name="flexRadioDefault2" id="flexRadioDefault2"/>
                 </div>
-                  
                 <div class="cs-form mr-3 alarm-set-timer-container">
                     <input type="time" class="form-control set-timer-alarm" defaultTime="false" value="00:00"/>
                 </div>
@@ -74,7 +78,7 @@
         </div>
 
         <audio controls class="audio-tag">
-            <source src="./public/mixkit-warning-alarm-buzzer-991.wav" type="audio/wav">
+            <source src="" type="audio/wav">
         </audio>
     </div>
 
