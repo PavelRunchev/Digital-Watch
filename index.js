@@ -2,6 +2,8 @@
 (function() {
     let card = document.querySelector(".card");
     displayNone(card);
+    //The element don't show that refresh page!
+    card.style.visibility = "visible";
 
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     let globalDate = [0, 0];
@@ -63,7 +65,10 @@
     audioBtnStop.addEventListener("click", audioStop);
 
     let audioTag = document.querySelector('.audio-tag');
-    audioTag.src = "./public/mixkit-warning-alarm-buzzer-991.wav";
+    audioTag.src = "./public/mixkit-clock-alarm-beep-1081.wav";
+
+    let vibrateTag = document.querySelector('.vibrate-tag');
+    vibrateTag.src = "./public/smartphone_vibrating_alarm_silent-7040.mp3";
 
     let vibrateAlarmImg = document.querySelector('.vibration-alarm-image');
     displayNone(vibrateAlarmImg);
@@ -191,8 +196,14 @@
         displayFlex(card);
     }
 
-    function audioOn(e) { if(withAudioFile) audioTag.play(); }
-    function audioStop(e) { audioTag.pause(); }
+    function audioOn(e) { 
+        if(withAudioFile) audioTag.play(); 
+        if(withVibration) vibrateTag.play();
+    }
+    function audioStop(e) { 
+        if(withAudioFile) audioTag.pause(); 
+        if(withVibration) vibrateTag.pause(); 
+    }
 
     function displayNone(elem) { elem.style.display = "none"; }
     function displayBlock(elem) { elem.style.display = "block"; }
@@ -207,6 +218,7 @@
         if(vibrationInfo.className === "card-text mt-3 text-center vibration-info show") {
             vibrationInfo.classList.remove("show");
             vibrationInfo.classList.add("hide");
+            displayNone(vibrateAlarmImg);
         }
     }
 

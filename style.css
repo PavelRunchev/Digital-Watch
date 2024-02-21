@@ -182,6 +182,8 @@ a, button {
 
 /* Card */
 .card {
+	visibility:hidden;
+	opacity: 0;
 	display: none;
 	position: fixed !important;
 	top: calc(50% - 200px / 2);
@@ -194,6 +196,7 @@ a, button {
 	color: hsl(211deg, 95%, 51%);
 	justify-content: center;
 	align-items: center;
+	animation: loading forwards 0.5s linear;
 }
 
 .container-bell {
@@ -225,7 +228,8 @@ a, button {
 	transition: all 0.3s ease-out;
 }
 
-.audio-tag {
+.audio-tag,
+.vibrate-tag {
 	display: none;
 }
 
